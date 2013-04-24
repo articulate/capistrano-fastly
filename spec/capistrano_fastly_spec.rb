@@ -17,13 +17,13 @@ describe Capistrano::Fastly do
 
         it 'fails without Fastly configuration values' do
             @capistrano.set(:fastly_config, nil)
-            expect { @capistrano.find_and_execute_task('fastly:purge_all') }. to raise_error(Capistrano::Error, 'Fastly configuration is not set')
+            expect { @capistrano.find_and_execute_task('fastly:purge_all') }.to raise_error(Capistrano::Error, 'Fastly configuration is not set')
         end
 
         it 'completes with Fastly configuration values' do
             @capistrano.set(:fastly_config, @fastly_config)
             VCR.use_cassette('fastly_purge_all') do
-                expect { @capistrano.find_and_execute_task('fastly:purge_all') }. to_not raise_error
+                expect { @capistrano.find_and_execute_task('fastly:purge_all') }.to_not raise_error
             end
         end
     end
