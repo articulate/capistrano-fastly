@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.fastly.com/service/XXXXXXXXXXXXXXXXXXXXX/purge_all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+      X-Fastly-Key:
+      - YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Apr 2013 17:17:05 GMT
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - sameorigin
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '15'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-v37-ASH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0;s-maxage=0;private
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"ok"}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2013 17:17:05 GMT
+recorded_with: VCR 2.4.0

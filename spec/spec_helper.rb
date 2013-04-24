@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'vcr_setup'
 
 require 'capistrano-fastly'
 

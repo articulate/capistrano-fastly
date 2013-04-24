@@ -4,3 +4,5 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rspec'
+gem 'vcr'
+gem 'webmock', '< 1.10'
