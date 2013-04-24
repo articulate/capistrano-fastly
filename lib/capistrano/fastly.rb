@@ -1,5 +1,5 @@
 require 'capistrano'
-require 'capistrano-fastly/version'
+require 'capistrano/fastly/version'
 require 'net/https'
 
 module Capistrano
