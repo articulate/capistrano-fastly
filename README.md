@@ -1,6 +1,6 @@
 # Capistrano::Fastly
 
-TODO: Write a gem description
+Capistrano tasks for interacting with [Fastly](http://www.fastly.com/), a CDN/caching service.
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The only task at the moment is `purge_all` which flushes the entire cache for a single site.
+
+Add this to your deploy.rb file with your real service id and api key:
+
+        require 'capistrano/fastly'
+
+        set :fastly_config, { 
+            :service_id => '----', 
+            :api_key => '----' 
+        }
+
+Then you'll be able to call this task directly:
+
+        cap fastly:purge_all
 
 ## Contributing
 
