@@ -6,3 +6,4 @@ gemspec
 gem 'rspec'
 gem 'vcr'
 gem 'webmock', '< 1.10'
+gem 'rake'
