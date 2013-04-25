@@ -1,4 +1,4 @@
-# Capistrano::Fastly
+# Capistrano::Fastly [![Build Status](https://travis-ci.org/articulate/capistrano-fastly.png?branch=master)](https://travis-ci.org/articulate/capistrano-fastly)
 
 Capistrano tasks for interacting with [Fastly](http://www.fastly.com/), a CDN/caching service.
 
