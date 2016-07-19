@@ -13,7 +13,7 @@ http_interactions:
       - Ruby
       Content-Type:
       - application/json
-      X-Fastly-Key:
+      Fastly-Key:
       - YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
   response:
     status:
