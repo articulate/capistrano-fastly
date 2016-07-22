@@ -18,7 +18,7 @@ module Capistrano
             http.verify_mode = OpenSSL::SSL::VERIFY_NONE
             request = Net::HTTP::Post.new("/service/#{fastly_config[:service_id]}/purge_all")
             request.add_field('Content-Type', 'application/json')
-            request.add_field('X-Fastly-Key', fastly_config[:api_key])
+            request.add_field('Fastly-Key', fastly_config[:api_key])
             request.body = ""
             response = http.request(request)
 
